@@ -16,7 +16,7 @@ body .principal {
 }
 
 .header {
-  background-image: url('/images/fundo_lighten.jpg');
+  background-image: url('images/fundo_lighten.jpg');
   background-size: cover;
   background-attachment: fixed;
   padding-top: 10px;
