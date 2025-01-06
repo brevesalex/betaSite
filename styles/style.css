@@ -1,148 +1,161 @@
-body {
-  background-color: gray;
-  height: auto;
-  margin-top: 0;
-  padding-top: 0;
-}
-
-body .principal {
-  max-width: 1000px;
-  /*background-image: url('/images/fundo_lighten.jpg');*/
-  background-size: cover;
+.corpo {
+  margin: 0;
+  background-color: rgb(34, 31, 125);
+  background-image: url("../images/fundo_lighten.jpg");
+  background-size: 80%;
+  background-repeat: repeat-y;
+  background-position: center top;
   background-attachment: fixed;
-  margin: auto;
-  font-family: Arial, sans-serif;
-  color: navy; 
+  padding-top: 220px;
+  padding-left: 11%;
+  padding-right: 11%;
+  color: navy;  
 }
 
 .header {
-  /*background-image: url('/images/fundo_lighten.jpg');*/
-  background-size: cover;
-  background-attachment: fixed;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: rgb(202, 199, 199);
-  text-align: center;
   position: fixed;
-  max-width: 1000px;
-  min-width: 700px;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 200px;
+  text-align: center;
+  color: navy;
+  border-bottom: 1px solid rgb(193, 193, 193);
+  border-bottom-style: groove;
+  background-color: rgb(230, 230, 230);
 }
 
-          .header .topo{
-            display: flex;
-            flex-direction: row;
-            height: 70px;
+.header .resumeLink {
+  position: absolute;
+  top: 10px;
+  right: 55px;  
+}
 
-          }
+.header .resumeLink img{
+  width: 33px;
+}
 
-          .header .topo .esquerdo {
-            flex: 1;
-            border-style: none;
-            border-width: 1px;
+.header .linkedinLink {
+  position: absolute;
+  top: 12px;
+  right: 15px;  
+}
 
-          }
+.header .linkedinLink img{
+  width: 30px;
+}
 
-          .header .topo .nome {
-            flex: 5;
-            font-size: 36px;
-            font-weight: bold;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            border-style: none;
-            border-width: 1px;
-          }
+.header .nome {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: Roboto, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-style: none;
+  padding-top: 20px;
+}
 
-          .header .topo .direito {
-            flex: 1;
-            padding: auto;
-            margin: auto;
-            margin-bottom: 0;
-            border-style: none;
-            border-width: 1px;
-            display: flex;
-            flex-direction: row;
-            
-          }
-          .header .topo .direito img {
-            vertical-align: top;
-            padding-left: 10px;
-          }
+.header .mensagem {
+  padding-top: 20px;
+  font-family: cursive;
+  font-style: italic;}
 
-          .header .mensagem {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-style: italic;
-            margin-top: 5px;
-            margin-bottom: 20px;
-          }
+.header .botoes {
+  padding-top: 20px;
+}
 
-          .header button {
-            font-size: 20px;
-            text-decoration: none;
-            background-color: orange;
-            border-color: darkorange;
-            color: navy;
-            border-width: 1px;
-            border-radius: 5px;
-            border-style: solid;
-            margin: 15px 10px;
-            padding: 5px 10px;
-            cursor: pointer;
-            box-shadow: 5px 5px 5px rgba(0,0,128,0.5);         
-          }
+.header button {
+  font-size: 18px;
+  text-decoration: none;
+  background-color: orange;
+  border-color: darkorange;
+  color: navy;
+  border-width: 1px;
+  border-radius: 5px;
+  border-style: solid;
+  margin: 0 1%;
+  padding: 0.5% 1.0%;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0,0,128,0.5);      
+}
 
-          .header button:hover {  
-            opacity: 80%;
-            background-color: darkorange;
-            font-style: italic;
-          }
+@media (max-width: 700px){
+  .header button {
+    font-size: 14px;
+  }
+}
 
-          .header button:active {
-            opacity: 30%;
-            background-color: darkorange;
-            font-style: italic;
-          }
+.header button:hover {  
+  opacity: 80%;
+  background-color: darkorange;
+  font-style: italic;
+}
 
-          .header .botoes { 
-            position: static;
-          }
+.header button:active {
+  opacity: 30%;
+  background-color: darkorange;
+  font-style: italic;
+}
 
-.corpo {
-  padding-top: 220px;
-  max-width: 1000px;
+.centro {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
-          .corpo .foto {
-            width: 33%;
-          }
+.foto-profile {
+  flex: 1;
+}
 
-          .corpo .foto img{
-            width: 100%;
-            margin: 10px;
-            border-radius: 50%;
-            box-shadow: 10px 10px 25px rgba(0, 0, 128, 0.5);
-          }
+.foto-profile img {
+  margin-left: 1%;
+  width: 96%;
+  border-radius: 100%;
+  box-shadow: 5px 5px 5px rgba(0,0,128,0.5);
+}
 
-          .corpo .texto {
-            width: 67%;
-            line-height: 30px;
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-size: 22px;
-            padding: 10px 20px;
-          }
+.texto-profile {
+  flex: 2;
+  font-size: 30px;
+  color: navy;
+}
 
-.buttons-links {
-  padding: 10px 20px;
+@media (max-width: 1100px){
+  .texto-profile {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1000px){
+  .texto-profile {
+    font-size: 20px;
+  }
 }
 
 .page {
   display: none;
-  padding: 20px;
-  line-height: 25px;
+  margin-top:20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 0 15px;
+  line-height: 32px;
+  font-size: 26px;
+  border: 1px dotted navy;
+  box-shadow: 5px 5px 5px;
 }
+
+@media (max-width: 1100px){
+  .page {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1000px){
+  .page {
+    font-size: 18px;
+  }
+}
+
+          .page h2 {
+            padding-left: 20px;
+          }
 
           .page.active {
             display: block;
@@ -159,31 +172,12 @@ body .principal {
           }
 
 .footer {
-  bottom: 0;
-  margin: 30px 0;
-  padding: 20px 0;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding-top: 10px;
   text-align: center;
+  font-size: 14px;
   border-top-style: solid;
-  border-top-color: rgb(202, 199, 199);
+  border-top-color: rgb(193, 193, 193);
   border-top-width: 1px;
-}
-
-.resumeLink {
-  flex: 1.5;
-}
-
-.resumeLink img {
-  height: 50px;
-  padding: 5px 0;
-  margin-left: 30px;
-  margin-right: 0;
-}
-
-.linkedinLink {
-  flex: 1;
-}
-
-.linkedinLink img {
-  height: 35px;
-  padding-top: 8px;
 }
