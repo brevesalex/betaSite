@@ -6,20 +6,21 @@
   background-repeat: repeat-y;
   background-position: center top;
   background-attachment: fixed;
-  padding-top: 220px;
+  padding-top: 240px;
   padding-left: 6%;
   padding-right: 6%;
-  color: navy;  
+  color: navy;
 }
 
 .header {
   position: fixed;
   top: 0;
   left: 5%;
-  right: 5%;
+  right: 4.96%;
   height: 200px;
   text-align: center;
   color: navy;
+  border-top: 20px solid rgb(34, 31, 125);
   border-bottom: 1px solid rgb(193, 193, 193);
   border-bottom-style: groove;
   background-color: rgb(230, 230, 230);
@@ -48,13 +49,14 @@
 .header .nome {
   font-size: 36px;
   font-weight: bold;
-  font-family: Roboto, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Roboto, Cambria, Cochin, Arial, Georgia, Times, 'Times New Roman', serif;
   border-style: none;
   padding-top: 20px;
 }
 
 .header .mensagem {
-  padding-top: 20px;
+  padding-top: 24px;
+  color: crimson;
   font-family: cursive;
   font-style: italic;}
 
@@ -106,13 +108,14 @@
 
 .foto-profile img {
   margin-left: 1%;
-  width: 96%;
+  width: 93%;
   border-radius: 100%;
   box-shadow: 5px 5px 5px rgba(0,0,128,0.5);
 }
 
 .texto-profile {
   flex: 2;
+  margin-right: 2%;
   font-size: 30px;
   color: navy;
 }
@@ -155,6 +158,7 @@
 
           .page h2 {
             padding-left: 20px;
+            color: crimson;
           }
 
           .page.active {
@@ -180,4 +184,5 @@
   border-top-style: solid;
   border-top-color: rgb(193, 193, 193);
   border-top-width: 1px;
+  color:black;
 }
